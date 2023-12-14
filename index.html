@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger-Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            height: 900px; /* تعديل ارتفاع الصورة حسب الحاجة */
+            color: #ffffff;
+            overflow: hidden; /* يتم استخدام هذا لإخفاء أي جزء من الصورة يزيد عن ارتفاع العنصر */
+        }
+
+        .header h1 {
+            position: absolute;
+            top: 50px; /* تعديل المسافة من الأعلى حسب الحاجة */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            margin-bottom: 20px;
+            z-index: 1; /* يتم استخدام هذا للتأكد من أن النص يظهر أمام الصورة */
+        }
+
+        .header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* تجعل الصورة تغطي العنصر بحيث لا يكون هناك فراغات */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .order-button,
+        .arabic-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.3s ease; /* إضافة تأثير التحول */
+            display: inline-block;
+            text-decoration: none; /* إزالة التأثير الافتراضي للروابط */
+        }
+
+        .order-button:hover,
+        .arabic-button:hover {
+            transform: scale(1.1); /* تكبير الزر عند التحويل */
+        }
+
+        .order-button {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+
+        .arabic-button {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="menuE.jpg" alt="Burger Bar Menu">
+        <h1></h1>
+    </div>
+
+    <div class="button-container">
+        <a href="https://api.whatsapp.com/send/?phone=96176799767&text&type=phone_number&app_absent=0" class="order-button">Order</a>
+        <a href="index2.html" class="arabic-button">Arabic</a>
+    </div>
+
+    <!-- The rest of your content goes here -->
+
+</body>
+</html>
