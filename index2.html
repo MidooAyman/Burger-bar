@@ -6,6 +6,7 @@
     <title>برجر بار عربي</title>
     <style>
         body {
+            background-color: #000000; /* اللون الأسود */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -14,11 +15,9 @@
         .header {
             position: relative;
             text-align: center;
-            background-image: url('menuA.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 900px; /* تعديل ارتفاع الصورة حسب الحاجة */
+            height: 600px; /* تعديل ارتفاع الصورة حسب الحاجة */
             color: #ffffff;
+            
         }
 
         .header h1 {
@@ -28,12 +27,19 @@
             transform: translateX(-50%);
             font-size: 36px;
             margin-bottom: 20px;
+            z-index: 1; /* يتم استخدام هذا للتأكد من أن النص يظهر أمام الصورة */
+        }
+
+        .header img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* عرض الصورة بالكامل دون تشويه */
         }
 
         .button-container {
             text-align: center;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .order-button,
@@ -66,7 +72,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>.</h1>
+        <h1></h1>
     </div>
 
     <div class="button-container">
